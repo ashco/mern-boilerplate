@@ -17,6 +17,7 @@ router.post('/login', function(req, res, next) {
 
 // POST /auth/signup route - create a user in the DB and then log them in
 router.post('/signup', function(req, res, next) {
+  // TODO: FIRST CHECK IF USER ALREADY EXISTS
   console.log('/auth/signup post route', req.body);
   res.send('sign up stub');
 });
